@@ -49,7 +49,7 @@
 // }
 
 
-import heroImage from "../assets/hero.jpg";
+import heroImage from "/hero.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Container from "./Container";
 
