@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brandBlue: #1559c0;
+  --color-brandRed: #e61919;
+  --color-brandLight: #f5f7fa;
+  --color-brandDark: #1e1e1e;
+}
+
+/* Если хочешь, можешь оставить свои :root-переменные, но Tailwind они не нужны */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-brandBlue);
+  outline-offset: 3px;
+}
+
+:target {
+  scroll-margin-top: 70px; 
+}
