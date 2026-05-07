@@ -53,7 +53,7 @@ export default function BookingForm() {
               value="New booking request from FixEh website"
             />
             <input type="hidden" name="from_name" value="FixEh Website" />
-            {/* анти-бот */}
+            
             <input type="checkbox" name="botcheck" className="hidden" />
 
             <div>
@@ -66,11 +66,11 @@ export default function BookingForm() {
                 required
                 className="
                     w-full rounded-xl border border-gray-300 bg-white p-3
-  text-brandDark
-  placeholder:text-gray-400
-  outline-none
-  transition-all
-  focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/20
+                    text-brandDark
+                    placeholder:text-gray-400
+                    outline-none
+                    transition-all
+                    focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/20
                 "
               />
             </div>
@@ -85,11 +85,11 @@ export default function BookingForm() {
                 required
                 className="
                     w-full rounded-xl border border-gray-300 bg-white p-3
-  text-brandDark
-  placeholder:text-gray-400
-  outline-none
-  transition-all
-  focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/20
+                    text-brandDark
+                    placeholder:text-gray-400
+                    outline-none
+                    transition-all
+                    focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/20
                 "
               />
             </div>
@@ -104,11 +104,11 @@ export default function BookingForm() {
                 required
                 className="
                     w-full rounded-xl border border-gray-300 bg-white p-3
-  text-brandDark
-  placeholder:text-gray-400
-  outline-none
-  transition-all
-  focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/20
+                    text-brandDark
+                    placeholder:text-gray-400
+                    outline-none
+                    transition-all
+                    focus:border-brandBlue focus:ring-4 focus:ring-brandBlue/20
                 "
               />
             </div>

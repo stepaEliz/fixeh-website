@@ -7,7 +7,7 @@
   --color-brandDark: #1e1e1e;
 }
 
-/* Если хочешь, можешь оставить свои :root-переменные, но Tailwind они не нужны */
+
 html,
 body {
   margin: 0;
