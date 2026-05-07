@@ -116,7 +116,7 @@ export default function BookingForm() {
             <button
               type="submit"
               className="
-                w-full bg-brandRed text-white py-4 rounded-xl
+                w-full bg-brandRed text-white py-4 rounded-xl cursor-pointer
                 text-lg font-semibold shadow-md
                 hover:bg-brandRedDark transition duration-300
                 hover:scale-[1.02] active:scale-[0.98]
