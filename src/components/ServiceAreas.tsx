@@ -15,7 +15,7 @@ const areas = [
 
 const ServiceAreas: React.FC = () => {
   return (
-    <AnimatedSection className="py-16 bg-brandLight">
+    <AnimatedSection className="py-16 bg-white">
       <Container>
         <h2 className="text-3xl md:text-4xl font-bold text-brandBlue text-center mb-3">
           Service Areas
@@ -28,7 +28,7 @@ const ServiceAreas: React.FC = () => {
           {areas.map((area) => (
             <span
               key={area}
-              className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm md:text-base text-brandDark shadow-sm"
+              className="px-4 py-2 bg-brandLight border border-gray-200 rounded-full text-sm md:text-base text-brandDark shadow-sm"
             >
               {area}
             </span>

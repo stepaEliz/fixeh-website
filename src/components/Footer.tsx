@@ -20,9 +20,29 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold mb-3">Navigation</h4>
             <ul className="space-y-1 text-sm text-gray-100">
-              <li><Link to="/" className="hover:text-white">Home</Link></li>
-              <li><Link to="/services" className="hover:text-white">Services</Link></li>
-              <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
+              <li>
+                <Link to="/" className="hover:text-white">
+                  Home
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/services" className="hover:text-white">
+                  Services
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/home-care-plans" className="hover:text-white">
+                  Home Care Plans
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/contact" className="hover:text-white">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 

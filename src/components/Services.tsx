@@ -32,7 +32,7 @@ const services = [
 
 const Services: React.FC = () => {
   return (
-    <AnimatedSection className="py-24 bg-white">
+    <AnimatedSection className="py-24 bg-brandLight">
       <Container>
         {/* Title */}
         <div className="text-center mb-14">
@@ -41,9 +41,8 @@ const Services: React.FC = () => {
           </h2>
 
           <p className="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
-            Professional handyman work across the Lower Mainland — reliable,
-            skilled, and always here to help with your home projects.
-          </p>
+Professional handyman and property services across the Lower Mainland —
+  from one-time repairs and installations to ongoing maintenance and support.          </p>
         </div>
 
         {/* Cards */}
@@ -52,7 +51,7 @@ const Services: React.FC = () => {
             <div
               key={service.title}
               className="
-                bg-brandLight/50 rounded-2xl p-8 
+                bg-white rounded-2xl p-8 
                 shadow-sm border border-gray-200
                 transition-all duration-300
                 hover:shadow-xl hover:-translate-y-1

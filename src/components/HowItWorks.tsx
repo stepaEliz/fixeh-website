@@ -19,7 +19,7 @@ const steps = [
 
 const HowItWorks: React.FC = () => {
   return (
-    <AnimatedSection className="py-16 bg-white">
+    <AnimatedSection className="py-16 bg-brandLight">
       <Container>
         <h2 className="text-3xl md:text-4xl font-bold text-brandBlue text-center mb-3">
           How It Works
@@ -32,7 +32,7 @@ const HowItWorks: React.FC = () => {
           {steps.map((step) => (
             <div
               key={step.title}
-              className="bg-brandLight rounded-xl p-6 border border-gray-200 shadow-sm"
+              className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm"
             >
               <h3 className="font-semibold text-lg text-brandDark mb-2">
                 {step.title}

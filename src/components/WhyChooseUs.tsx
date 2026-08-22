@@ -4,15 +4,7 @@ import Container from "./Container";
 
 export default function WhyChoose() {
   return (
-    <AnimatedSection className="relative py-24 bg-brandLight overflow-hidden">
-      {/* Background pattern */}
-      <div
-        className="absolute inset-0 opacity-[0.04] bg-repeat"
-        style={{
-          backgroundImage: "url('/background-pattern.png')",
-          backgroundSize: "230px",
-        }}
-      />
+  <AnimatedSection className="py-24 bg-white">
 
       <Container>
         {/* Title */}
@@ -21,8 +13,8 @@ export default function WhyChoose() {
             Why Choose FixEh?
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Trusted handyman services providing reliable, transparent, and
-            professional work across the Lower Mainland.
+Reliable handyman and property support with professional workmanship,
+  clear communication, and ongoing care across the Lower Mainland.
           </p>
         </div>
 
@@ -36,8 +28,8 @@ export default function WhyChoose() {
             },
             {
               icon: ToolCaseIcon,
-              title: "Repairs, Assembly & Painting",
-              desc: "From mounting and furniture assembly to painting and home repairs.",
+              title: "Projects & Property Support",
+  desc: "From everyday repairs and installations to maintenance, projects and ongoing property support.",
             },
             {
               icon: HandshakeIcon,
@@ -48,7 +40,7 @@ export default function WhyChoose() {
             <div
               key={i}
               className="
-                bg-white p-8 rounded-2xl border shadow-sm 
+  bg-brandLight p-8 rounded-2xl border border-gray-200 shadow-sm
                 hover:shadow-xl hover:-translate-y-1 
                 transition-all duration-300
                 text-center

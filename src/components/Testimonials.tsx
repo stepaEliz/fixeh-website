@@ -8,26 +8,23 @@ export default function Testimonials() {
       service: "Yard Work",
       text: "Came right away, did a quality job and fast too.",
       date: "Apr 19, 2025",
-      avatar: "https://i.pravatar.cc/80?img=47",
     },
     {
       name: "Leloi M.",
       service: "Plumbing Help",
       text: "Very accommodating and left everything tidy and clean. Worked efficiently in a tight space!",
       date: "May 13, 2025",
-      avatar: "https://i.pravatar.cc/80?img=12",
     },
     {
       name: "Michelle K.",
       service: "General Mounting",
       text: "Amazing work, very professional and detail-oriented. Highly recommend!",
       date: "Mar 15, 2025",
-      avatar: "https://i.pravatar.cc/80?img=33",
     },
   ];
 
   return (
-    <AnimatedSection className="py-24 bg-brandLight">
+    <AnimatedSection className="py-24 bg-white">
       <Container>
         {/* Title */}
         <h2 className="text-4xl font-bold text-brandBlue text-center mb-3">
@@ -45,7 +42,7 @@ export default function Testimonials() {
             <div
               key={i}
               className="
-                p-8 rounded-2xl bg-brandLight/50 border border-gray-200 
+                p-8 rounded-2xl bg-brandLight border border-gray-200
                 shadow-sm hover:shadow-lg transition-all duration-300
               "
             >

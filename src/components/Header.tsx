@@ -34,7 +34,7 @@ const Header: React.FC = () => {
         </Link>
 
         {/* Navigation */}
-        <nav className="flex gap-6 text-sm md:text-base font-medium">
+        <nav className="flex items-center gap-3 sm:gap-5 md:gap-6 text-xs sm:text-sm md:text-base font-medium">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -55,6 +55,17 @@ const Header: React.FC = () => {
             }
           >
             Services
+          </NavLink>
+
+          <NavLink
+            to="/home-care-plans"
+            className={({ isActive }) =>
+              `hover:text-brandRed transition ${isActive ? "text-brandBlue" : "text-gray-700"
+              }`
+            }
+          >
+            <span className="hidden sm:inline">Home Care Plans</span>
+            <span className="sm:hidden">Plans</span>
           </NavLink>
 
           <NavLink

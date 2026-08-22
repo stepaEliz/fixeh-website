@@ -2,8 +2,8 @@ import Container from "./Container";
 
 const items = [
   "★★★★★ 5-star rated on TaskRabbit",
-  "Serving the Lower Mainland",
-  "Fast, clean and reliable service",
+  "15+ years of construction experience",
+  "One-time services & Home Care Plans",
 ];
 
 export default function TrustBar() {

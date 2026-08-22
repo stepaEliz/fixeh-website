@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import TrustBar from "../components/TrustBar";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Services from "../components/Services";
+import HomeCareTeaser from "../components/HomeCareTeaser";
 import ServiceAreas from "../components/ServiceAreas";
 import HowItWorks from "../components/HowItWorks";
 import Testimonials from "../components/Testimonials";
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
     <>
       <Hero />
       <TrustBar />
+      <HomeCareTeaser />
       <WhyChooseUs />
       <Services />
       <ServiceAreas />

@@ -7,12 +7,15 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import ServicesPage from "./pages/ServicesPage";
+import HomeCarePlans from "./pages/HomeCarePlans";
 import ScrollToTop from "./components/ScrollToTop";
+import PageSEO from "./components/PageSEO";
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <ScrollToTop />
+      <PageSEO />
       <Header />
 
       <main className="flex-1">
@@ -20,6 +23,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/home-care-plans" element={<HomeCarePlans />} />
         </Routes>
       </main>
 

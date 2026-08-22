@@ -34,7 +34,7 @@ export default function BookingForm() {
   };
 
   return (
-    <AnimatedSection id="booking" className="py-20 bg-white">
+    <AnimatedSection id="booking" className="py-20 bg-brandLight">
       <Container>
         <div className="grid md:grid-cols-2 gap-16">
           <div>
