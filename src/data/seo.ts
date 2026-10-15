@@ -10,7 +10,7 @@ export const seoByPath = {
   },
   "/services": {
     title: "Handyman & Property Services | FixEh Lower Mainland",
-    description: "Explore FixEh handyman and property services across the Lower Mainland, including repairs, assembly, mounting, painting, maintenance and project support.",
+    description: "Explore FixEh handyman and property services across the Lower Mainland: repairs, assembly, painting, maintenance, wood slat feature walls and Home Care Plans.",
     image: "/hero.jpg", imageAlt: "FixEh Handyman Services",
   },
   "/home-care-plans": {

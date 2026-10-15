@@ -255,9 +255,15 @@ relative min-h-[85vh]
               </Link>
             </div>
 
-            <p className="mt-5 text-sm font-medium text-brandDark/80">
-              Plans are currently available by request.
-            </p>
+<p
+  className="
+    mt-5 max-w-sm
+    text-base font-semibold leading-relaxed text-brandDark
+    md:max-w-none md:text-sm md:font-medium md:leading-normal md:text-brandDark/80
+  "
+>
+  Plans are currently available by request.
+</p>
           </div>
         </Container>
       </section>

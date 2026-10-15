@@ -48,7 +48,9 @@ export default function Header() {
 
   const navLinks = links.map(({ to, label }) => (
     <NavLink key={to} to={to} onClick={() => setMenuOpen(false)}
-      className={({ isActive }) => `inline-flex min-h-11 items-center rounded-lg px-3 py-2 transition hover:text-brandRed md:px-0 ${isActive ? "text-brandBlue" : "text-gray-700"}`}>
+      className={({ isActive }) => `inline-flex min-h-11 w-full items-center rounded-lg py-2 transition hover:text-brandRed lg:w-auto lg:px-0 ${
+        isActive ? "text-brandBlue" : "text-gray-700"
+      }`}>
       {label}
     </NavLink>
   ));
@@ -66,9 +68,21 @@ export default function Header() {
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
-      {menuOpen && <nav id="mobile-navigation" aria-label="Mobile navigation" className="mx-4 mt-3 flex max-h-[calc(100vh-88px)] flex-col
-      overflow-y-auto border-t border-gray-200
-      pt-3 pb-4 text-base font-medium lg:hidden">{navLinks}</nav>}
+{menuOpen && (
+  <div className="mx-auto max-w-6xl px-4 lg:hidden">
+    <nav
+      id="mobile-navigation"
+      aria-label="Mobile navigation"
+      className="
+        mt-3 flex max-h-[calc(100vh-88px)] flex-col
+        overflow-y-auto border-t border-gray-200
+        pt-3 pb-4 text-base font-medium
+      "
+    >
+      {navLinks}
+    </nav>
+  </div>
+)}
     </header>
   );
 }
