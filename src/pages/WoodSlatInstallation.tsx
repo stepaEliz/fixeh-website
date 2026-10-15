@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import { ArrowDown, ArrowRight, Check, Mail, MessageSquare, Phone } from "lucide-react";
 import Container from "../components/Container";
 import ProjectGallery from "../components/ProjectGallery";
-import { woodSlatFaqs, woodSlatPhotos, woodSlatProcessPhoto } from "../data/woodSlat";
+import { woodSlatFaqs, woodSlatPhotos, woodSlatProcessPhoto, woodSlatLightingPhotos } from "../data/woodSlat";
 import AnimatedSection from "../components/AnimatedSection";
 
 const services = [
   { number: "01", title: "Wood slat wall panels", text: "A full wall or a carefully placed section. We install decorative wood slat panels with a consistent layout, aligned seams and a neat finish at the edges." },
   { number: "02", title: "Acoustic slat panels", text: "Installation of panels designed with acoustic backing, following the chosen product’s fixing and backing requirements. We confirm the panel type and installation method with you first." },
   { number: "03", title: "Feature & accent walls", text: "Give a living room, bedroom, entryway or office a point of interest. We help work out where the panels start, stop and meet the rest of the room." },
-  { number: "04", title: "TV & media walls", text: "Wood slats fitted into your TV or media wall layout, with the screen position, existing outlets and access points planned before cutting begins." },
+  { number: "04", title: "TV, media walls & accent lighting", text: "Wood slats can be integrated into TV and media wall layouts with accent lighting. We plan panel spacing and finishing around existing features; electrical work is handled by a qualified electrician where required." },
   { number: "05", title: "Columns & smaller accents", text: "Wrap a column, frame a stairway or add texture to a narrow wall. Smaller areas deserve the same care with alignment, corners and finishing." },
   { number: "06", title: "Cutting, fitting & trim", text: "Measured cuts around existing outlets, switches, corners and trim. We plan the details so panels work with the features already in your space." },
 ];
@@ -48,19 +48,19 @@ export default function WoodSlatInstallation() {
       <AnimatedSection className="bg-brandLight py-16 md:py-20" aria-labelledby="slat-services-title">
         <Container>
           <div className="mb-12 max-w-3xl">
-  <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brandRed">
-    Your space, thoughtfully finished
-  </p>
+            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brandRed">
+              Your space, thoughtfully finished
+            </p>
 
-  <h2 className="mt-3 text-3xl font-bold leading-tight text-brandBlue md:text-4xl">
-    From a single accent to a whole feature wall.
-  </h2>
+            <h2 className="mt-3 text-3xl font-bold leading-tight text-brandBlue md:text-4xl">
+              From a single accent to a whole feature wall.
+            </h2>
 
-  <p className="mt-4 max-w-2xl text-lg leading-relaxed text-gray-600">
-    The right layout makes the difference. We look at panel spacing, edges,
-    corners and the existing features of your room before the first cut.
-  </p>
-</div>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-gray-600">
+              The right layout makes the difference. We look at panel spacing, edges,
+              corners and the existing features of your room before the first cut.
+            </p>
+          </div>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <article key={service.number} className="rounded-2xl border border-gray-200 bg-white p-7">
@@ -76,25 +76,78 @@ export default function WoodSlatInstallation() {
 
       <AnimatedSection id="our-work" className="py-16 md:py-20" aria-labelledby="slat-work-title">
         <Container>
-<div className="mb-9 max-w-2xl">
-  <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brandRed">
-    A closer look
-  </p>
+          <div className="mb-9 max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brandRed">
+              A closer look
+            </p>
 
-  <h2
-    id="slat-work-title"
-    className="mt-3 text-3xl font-bold text-brandBlue md:text-4xl"
-  >
-    Wood slat installations by FixEh
-  </h2>
+            <h2
+              id="slat-work-title"
+              className="mt-3 text-3xl font-bold text-brandBlue md:text-4xl"
+            >
+              Wood slat installations by FixEh
+            </h2>
 
-  <p className="mt-4 max-w-xl leading-relaxed text-gray-600">
-    Real FixEh project photos from a recent wood slat installation.
-    Select any photo to view it full size.
-  </p>
-</div>
+            <p className="mt-4 max-w-xl leading-relaxed text-gray-600">
+              Real FixEh project photos from a recent wood slat installation.
+              Select any photo to view it full size.
+            </p>
+          </div>
           <ProjectGallery />
-          <div className="mt-12 grid overflow-hidden rounded-3xl border border-gray-200 bg-brandLight md:grid-cols-[0.8fr_1.2fr]">
+
+          <div className="mt-16 border-t border-gray-200 pt-16">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brandRed">
+                Wood slats + lighting
+              </p>
+
+              <h3 className="mt-3 text-3xl font-bold leading-tight text-brandBlue md:text-4xl">
+                Add Warmth, Depth & Definition
+              </h3>
+
+              <p className="mt-4 max-w-2xl text-lg leading-relaxed text-gray-600">
+                Wood slat details can be paired with accent lighting to create a stronger
+                feature in TV walls, media areas, kitchen islands and other architectural
+                details.
+              </p>
+            </div>
+
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {woodSlatLightingPhotos.map((photo) => (
+                <figure
+                  key={photo.src}
+                  className="overflow-hidden rounded-2xl border border-gray-200 bg-brandLight"
+                >
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    width={photo.width}
+                    height={photo.height}
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-[4/3] w-full object-cover"
+                  />
+
+                  <figcaption className="p-6">
+                    <h4 className="text-lg font-semibold text-brandDark">
+                      {photo.title}
+                    </h4>
+
+                    <p className="mt-2 leading-relaxed text-gray-600">
+                      {photo.caption}
+                    </p>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+
+            <p className="mt-5 max-w-3xl text-sm leading-relaxed text-gray-500">
+              Accent lighting can be incorporated into the overall design. New wiring or
+              electrical connections may require a qualified electrician.
+            </p>
+          </div>
+
+          <div className="mt-16 grid overflow-hidden rounded-3xl border border-gray-200 bg-brandLight md:grid-cols-[0.8fr_1.2fr]">
             <img
               src={woodSlatProcessPhoto.src}
               alt={woodSlatProcessPhoto.alt}

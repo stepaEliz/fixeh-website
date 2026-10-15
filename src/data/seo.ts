@@ -1,4 +1,4 @@
-import { WOOD_SLAT_PATH, woodSlatPhotos } from "./woodSlat";
+import { WOOD_SLAT_PATH, woodSlatPhotos, woodSlatLightingPhotos, } from "./woodSlat";
 
 export const SITE_URL = "https://fixeh.ca";
 
@@ -53,13 +53,15 @@ export function getPageSchema(pathname: string) {
         {
           "@type": "Service", "@id": `${seo.canonicalUrl}#service`,
           name: "Wood Slat & Feature Wall Installation", url: seo.canonicalUrl, description: seo.description,
-          serviceType: ["Wood Slat Wall Panel Installation", "Decorative Wood Slat Panels", "Acoustic Slat Panel Installation", "Feature and Accent Wall Installation", "TV and Media Walls with Wood Slats", "Column and Small Accent Panel Installation"],
+          serviceType: ["Wood Slat Wall Panel Installation", "Decorative Wood Slat Panels", "Acoustic Slat Panel Installation", "Feature and Accent Wall Installation", "TV and Media Walls with Wood Slats and Accent Lighting", "Column and Small Accent Panel Installation"],
           provider,
           areaServed: [
             { "@type": "AdministrativeArea", name: "Metro Vancouver, BC" },
             { "@type": "AdministrativeArea", name: "Lower Mainland, BC" },
           ],
-          image: woodSlatPhotos.map((photo) => `${SITE_URL}${photo.src}`),
+          image: [...woodSlatPhotos, ...woodSlatLightingPhotos].map(
+            (photo) => `${SITE_URL}${photo.src}`
+          ),
         },
         {
           "@type": "WebPage", "@id": `${seo.canonicalUrl}#webpage`, url: seo.canonicalUrl,

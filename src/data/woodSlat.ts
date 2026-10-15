@@ -42,6 +42,27 @@ export const woodSlatProcessPhoto = {
   alt: "Wood slat panels being cut with professional tools during a FixEh installation",
 } as const;
 
+export const woodSlatLightingPhotos = [
+  {
+    src: "/work/wood-slat/slat-tv-feature-wall-lighting.jpg",
+    width: 1600,
+    height: 1200,
+    alt: "Wood slat TV feature wall with warm accent lighting by FixEh",
+    title: "TV Feature Wall with Accent Lighting",
+    caption:
+      "Vertical wood slats paired with warm accent lighting to frame the TV and media area.",
+  },
+  {
+    src: "/work/wood-slat/slat-kitchen-island-lighting.jpg",
+    width: 1600,
+    height: 1200,
+    alt: "Wood slat kitchen island with warm accent lighting detail by FixEh",
+    title: "Slat-Clad Kitchen Island with Lighting",
+    caption:
+      "Vertical wood slats and warm accent lighting add texture and definition to the kitchen island.",
+  },
+] as const;
+
 export const woodSlatFaqs = [
   {
     question: "How much does wood slat wall installation cost?",
@@ -62,6 +83,10 @@ export const woodSlatFaqs = [
   {
     question: "Do you take on small accent areas and columns?",
     answer: "Yes. A narrow wall, entryway, column or staircase accent can be a project on its own. Send us a photo of the area and the look you have in mind.",
+  },
+  {
+    question: "Can wood slat panels be combined with accent lighting?",
+    answer: "Yes. Wood slat layouts can be planned around accent lighting for TV walls, feature areas and other architectural details. If new wiring or electrical connections are required, that portion of the work may need to be completed by a qualified electrician.",
   },
   {
     question: "Where do you offer feature wall installation?",
