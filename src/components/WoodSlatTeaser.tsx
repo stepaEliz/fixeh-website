@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import Container from "./Container";
 import AnimatedSection from "./AnimatedSection";
-import { WOOD_SLAT_PATH, woodSlatPhotos } from "../data/woodSlat";
+import { WOOD_SLAT_PATH, woodSlatLightingPhotos } from "../data/woodSlat";
 
 export default function WoodSlatTeaser() {
-  const detail = woodSlatPhotos[0];
+  const detail = woodSlatLightingPhotos[0];
   return (
     <AnimatedSection className="bg-white py-16 md:py-20" aria-labelledby="wood-slat-teaser-title">
       <Container>
