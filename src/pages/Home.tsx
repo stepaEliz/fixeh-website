@@ -8,6 +8,7 @@ import ServiceAreas from "../components/ServiceAreas";
 import HowItWorks from "../components/HowItWorks";
 import Testimonials from "../components/Testimonials";
 import BookingForm from "../components/BookingForm";
+import WoodSlatTeaser from "../components/WoodSlatTeaser";
 
 const Home: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
       <HomeCareTeaser />
       <WhyChooseUs />
       <Services />
+      <WoodSlatTeaser />
       <ServiceAreas />
       <HowItWorks />
       <Testimonials />

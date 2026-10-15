@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/wood-slat-wall-installation",
+      "destination": "/wood-slat-wall-installation/index.html"
+    },
+    {
+      "source": "/wood-slat-wall-installation/",
+      "destination": "/wood-slat-wall-installation/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

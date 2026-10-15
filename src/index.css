@@ -38,3 +38,79 @@ body {
 :target {
   scroll-margin-top: 70px; 
 }
+
+/* Wood slat service: use the site's existing palette and type. */
+.slat-page :target { scroll-margin-top: 90px; }
+.slat-primary, .slat-secondary {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 14px 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  transition: background-color 180ms, transform 180ms;
+}
+.slat-primary { background: var(--color-brandBlue); color: white; }
+.slat-primary:hover { background: #10499f; transform: translateY(-2px); }
+.slat-primary-white { background: white; color: var(--color-brandBlue); }
+.slat-primary-white:hover { background: #edf3fb; }
+.slat-secondary { border: 1px solid rgb(255 255 255 / 65%); color: white; }
+.slat-secondary:hover { background: rgb(255 255 255 / 12%); }
+.slat-hero-image { aspect-ratio: 1.05; }
+.slat-gallery { display: grid; gap: 28px; }
+.slat-gallery-card { min-width: 0; }
+.slat-gallery-open {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--color-brandLight);
+  cursor: zoom-in;
+}
+.slat-gallery-open img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms;
+}
+.slat-gallery-open { aspect-ratio: 4 / 3; }
+
+.slat-gallery-open:hover img { transform: scale(1.025); }
+.slat-gallery-expand {
+  position: absolute; right: 14px; bottom: 14px;
+  display: grid; place-items: center; width: 40px; height: 40px;
+  border-radius: 50%; color: white; background: rgb(0 0 0 / 65%);
+}
+.slat-lightbox {
+  position: fixed; inset: 0; width: 100%; max-width: none;
+  height: 100%; max-height: none; margin: 0; padding: 20px;
+  border: 0; background: rgb(12 16 22 / 94%); color: white;
+}
+.slat-lightbox::backdrop { background: rgb(12 16 22 / 80%); }
+.slat-lightbox[open] { display: grid; place-items: center; }
+.slat-lightbox-content { width: min(1080px, 100%); min-width: 0; }
+.slat-lightbox-content > img { display: block; width: 100%; height: min(74vh, 900px); object-fit: contain; }
+.slat-lightbox-control {
+  display: grid; place-items: center; width: 44px; height: 44px;
+  border-radius: 50%; border: 1px solid rgb(255 255 255 / 45%); cursor: pointer;
+}
+.slat-lightbox-control:hover { background: rgb(255 255 255 / 15%); }
+.slat-lightbox :focus-visible { outline-color: white; }
+.slat-faq summary::marker { color: var(--color-brandBlue); }
+
+@media (min-width: 640px) {
+  .slat-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html, body { scroll-behavior: auto; }
+  .slat-primary, .slat-gallery-open img { transition: none; }
+  .slat-primary:hover, .slat-gallery-open:hover img { transform: none; }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import { Link } from "react-router-dom";
+import { WOOD_SLAT_PATH } from "../data/woodSlat";
 
 const Footer: React.FC = () => {
   return (
@@ -11,8 +12,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-3">FixEh Handyman Services</h3>
             <p className="text-sm text-gray-100">
-              Reliable repairs, assembly, painting and maintenance across the
-              Lower Mainland.
+              Reliable handyman and property support across the Lower Mainland.
             </p>
           </div>
 
@@ -29,6 +29,12 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/services" className="hover:text-white">
                   Services
+                </Link>
+              </li>
+
+              <li>
+                <Link to={WOOD_SLAT_PATH} className="hover:text-white">
+                  Wood Slat &amp; Feature Walls
                 </Link>
               </li>
 

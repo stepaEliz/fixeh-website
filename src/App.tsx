@@ -10,6 +10,8 @@ import ServicesPage from "./pages/ServicesPage";
 import HomeCarePlans from "./pages/HomeCarePlans";
 import ScrollToTop from "./components/ScrollToTop";
 import PageSEO from "./components/PageSEO";
+import WoodSlatInstallation from "./pages/WoodSlatInstallation";
+import { WOOD_SLAT_PATH } from "./data/woodSlat";
 
 const App: React.FC = () => {
   return (
@@ -24,6 +26,7 @@ const App: React.FC = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/home-care-plans" element={<HomeCarePlans />} />
+          <Route path={WOOD_SLAT_PATH} element={<WoodSlatInstallation />} />
         </Routes>
       </main>
 

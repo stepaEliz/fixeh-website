@@ -5,6 +5,7 @@ import AnimatedSection from "./AnimatedSection";
 const areas = [
   "White Rock",
   "Surrey",
+  "Delta",
   "Langley",
   "Vancouver",
   "Burnaby",
@@ -15,7 +16,7 @@ const areas = [
 
 const ServiceAreas: React.FC = () => {
   return (
-    <AnimatedSection className="py-16 bg-white">
+    <AnimatedSection className="py-16 bg-white border-t border-gray-100">
       <Container>
         <h2 className="text-3xl md:text-4xl font-bold text-brandBlue text-center mb-3">
           Service Areas

@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../components/Container";
+import WoodSlatTeaser from "../components/WoodSlatTeaser";
 
 const services = [
   {
@@ -57,6 +58,7 @@ const services = [
 
 const ServicesPage: React.FC = () => {
   return (
+    <>
     <div className="py-20 mt-20 bg-white">
       <Container>
         {/* Page Title */}
@@ -112,6 +114,8 @@ const ServicesPage: React.FC = () => {
 
       </Container>
     </div>
+    <WoodSlatTeaser />
+    </>
   );
 };
 
