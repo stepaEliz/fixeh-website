@@ -3,6 +3,7 @@ import { ArrowDown, ArrowRight, Check, Mail, MessageSquare, Phone } from "lucide
 import Container from "../components/Container";
 import ProjectGallery from "../components/ProjectGallery";
 import { woodSlatFaqs, woodSlatPhotos, woodSlatProcessPhoto } from "../data/woodSlat";
+import AnimatedSection from "../components/AnimatedSection";
 
 const services = [
   { number: "01", title: "Wood slat wall panels", text: "A full wall or a carefully placed section. We install decorative wood slat panels with a consistent layout, aligned seams and a neat finish at the edges." },
@@ -19,7 +20,7 @@ export default function WoodSlatInstallation() {
   const detail = woodSlatPhotos[3];
   return (
     <div className="slat-page bg-white pt-24">
-      <section className="pb-14 pt-5 md:pb-20 md:pt-8" aria-labelledby="slat-page-title">
+      <AnimatedSection className="pb-14 pt-5 md:pb-20 md:pt-8" aria-labelledby="slat-page-title">
         <Container>
           <div className="grid items-center gap-9 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
             <div>
@@ -42,9 +43,9 @@ export default function WoodSlatInstallation() {
             {["Decorative & acoustic panel installation", "Walls, columns & accent areas", "Careful cuts & finishing"].map((item) => <li key={item} className="flex items-center gap-2"><Check size={17} className="text-brandBlue" aria-hidden="true" />{item}</li>)}
           </ul>
         </Container>
-      </section>
+      </AnimatedSection>
 
-      <section className="bg-brandLight py-16 md:py-20" aria-labelledby="slat-services-title">
+      <AnimatedSection className="bg-brandLight py-16 md:py-20" aria-labelledby="slat-services-title">
         <Container>
           <div className="mb-12 max-w-3xl">
   <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brandRed">
@@ -71,9 +72,9 @@ export default function WoodSlatInstallation() {
           </div>
           <p className="mt-6 max-w-3xl text-sm leading-relaxed text-gray-600">Choosing panels? Send us the product link. Decorative panels and acoustic slat panels have different specifications; we will confirm the fitting method for your chosen product.</p>
         </Container>
-      </section>
+      </AnimatedSection>
 
-      <section id="our-work" className="py-16 md:py-20" aria-labelledby="slat-work-title">
+      <AnimatedSection id="our-work" className="py-16 md:py-20" aria-labelledby="slat-work-title">
         <Container>
 <div className="mb-9 max-w-2xl">
   <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brandRed">
@@ -126,9 +127,9 @@ export default function WoodSlatInstallation() {
             </div>
           </div>
         </Container>
-      </section>
+      </AnimatedSection>
 
-      <section className="border-y border-gray-200 bg-brandLight py-16 md:py-20" aria-labelledby="slat-process-title">
+      <AnimatedSection className="border-y border-gray-200 bg-brandLight py-16 md:py-20" aria-labelledby="slat-process-title">
         <Container>
           <h2 id="slat-process-title" className="text-3xl font-bold text-brandBlue md:text-4xl">Start with a photo. We’ll take it from there.</h2>
           <div className="mt-10 grid gap-8 md:grid-cols-3 md:gap-10">
@@ -145,9 +146,9 @@ export default function WoodSlatInstallation() {
             ))}
           </div>
         </Container>
-      </section>
+      </AnimatedSection>
 
-      <section className="py-16 md:py-20" aria-labelledby="slat-faq-title">
+      <AnimatedSection className="py-16 md:py-20" aria-labelledby="slat-faq-title">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
             <div>
@@ -165,9 +166,9 @@ export default function WoodSlatInstallation() {
             </div>
           </div>
         </Container>
-      </section>
+      </AnimatedSection>
 
-      <section id="photo-quote" className="bg-brandBlue py-16 text-white md:py-20" aria-labelledby="slat-quote-title">
+      <AnimatedSection id="photo-quote" className="bg-brandBlue py-16 text-white md:py-20" aria-labelledby="slat-quote-title">
         <Container>
           <div className="grid items-start gap-9 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
             <div>
@@ -194,7 +195,7 @@ export default function WoodSlatInstallation() {
             </div>
           </div>
         </Container>
-      </section>
+      </AnimatedSection>
     </div>
   );
 }

@@ -185,7 +185,7 @@ export default function HomeCarePlans() {
   return (
     <div className="mt-16 bg-white">
       {/* HERO */}
-      <section
+      <AnimatedSection
         className="
 relative min-h-[85vh]
   flex items-center overflow-hidden
@@ -266,7 +266,7 @@ relative min-h-[85vh]
 </p>
           </div>
         </Container>
-      </section>
+      </AnimatedSection>
 
 
       {/* MORE THAN A HANDYMAN */}
