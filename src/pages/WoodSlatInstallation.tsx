@@ -46,13 +46,20 @@ export default function WoodSlatInstallation() {
 
       <section className="bg-brandLight py-16 md:py-20" aria-labelledby="slat-services-title">
         <Container>
-          <div className="grid gap-5 md:grid-cols-2 md:items-end md:gap-16">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brandRed">Your space, thoughtfully finished</p>
-              <h2 id="slat-services-title" className="mt-3 text-3xl font-bold leading-tight text-brandBlue md:text-4xl">From a single accent<br className="hidden md:block" /> to a whole feature wall.</h2>
-            </div>
-            <p className="leading-relaxed text-gray-600">The right layout makes the difference. We look at panel spacing, edges, corners and the existing features of your room before the first cut.</p>
-          </div>
+          <div className="mb-12 max-w-3xl">
+  <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brandRed">
+    Your space, thoughtfully finished
+  </p>
+
+  <h2 className="mt-3 text-3xl font-bold leading-tight text-brandBlue md:text-4xl">
+    From a single accent to a whole feature wall.
+  </h2>
+
+  <p className="mt-4 max-w-2xl text-lg leading-relaxed text-gray-600">
+    The right layout makes the difference. We look at panel spacing, edges,
+    corners and the existing features of your room before the first cut.
+  </p>
+</div>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <article key={service.number} className="rounded-2xl border border-gray-200 bg-white p-7">
