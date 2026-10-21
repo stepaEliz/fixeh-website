@@ -32,7 +32,7 @@ export default function WoodSlatInstallation() {
                 slat panels with attention to the details you see every day. Serving Metro
                 Vancouver and the Lower Mainland.
               </p>
-              <a href="#photo-quote" className="slat-primary mt-7">Send us a photo for a quote. <ArrowRight size={19} aria-hidden="true" /></a>
+              <a href="#photo-quote" className="slat-primary mt-7">Send us a photo for a quote <ArrowRight size={19} aria-hidden="true" /></a>
               <a href="#our-work" className="mt-4 flex min-h-11 w-fit items-center gap-2 text-sm font-semibold text-brandBlue hover:underline">See our work <ArrowDown size={16} aria-hidden="true" /></a>
             </div>
             <figure className="relative">
